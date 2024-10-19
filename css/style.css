@@ -1,0 +1,110 @@
+:root {
+  --main-color-alpha: rgba(214, 46, 51, 0.6);
+  --main-color: rgb(214, 46, 51);
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.sidebar {
+  left: -200px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.5s;
+}
+
+.sidebar i {
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.sidebar div {
+  width: 200px;
+}
+
+.sidebar a:hover,
+.sidebar .close:hover {
+  color: rgba(214, 46, 51, 0.4);
+}
+
+.sidebar .open {
+  cursor: pointer;
+}
+
+.header {
+  background-image: linear-gradient(
+      var(--main-color-alpha),
+      var(--main-color-alpha)
+    ),
+    url(../images/events-heavenly-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header h2 {
+  font-size: 60px;
+}
+
+.my-accordion {
+  width: 50%;
+}
+
+.my-accordion h3 {
+  background-color: var(--main-color-alpha);
+  cursor: pointer;
+}
+
+.my-accordion p {
+  background-color: #ccc;
+  display: none;
+}
+
+.my-accordion .one {
+  display: block;
+}
+
+.counter {
+  background-image: linear-gradient(
+      var(--main-color-alpha),
+      var(--main-color-alpha)
+    ),
+    url(../images/invitation-2508607__340.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.counter p {
+  font-size: 1.875rem;
+}
+
+.contact ul li {
+  width: 40px;
+  height: 40px;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact .form-control:focus {
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--main-color-alpha);
+}
+
+.form-control::placeholder {
+  color: #777;
+}
+
+.contact .btn:hover {
+  background-color: var(--main-color);
+}
